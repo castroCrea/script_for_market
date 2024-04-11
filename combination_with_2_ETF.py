@@ -34,5 +34,7 @@ parser.add_argument('-1', '--num1', type=float, help='Price of your first action
 parser.add_argument('-2', '--num2', type=float, help='Price of your second action', required=True)
 args = parser.parse_args()
 
-calculate_possibilities(args.target, args.num1, args.num2)
+print(parser)
+
+calculate_possibilities(args.total, args.num1, args.num2)
 
